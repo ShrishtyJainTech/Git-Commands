@@ -10,6 +10,7 @@ A practical, easy-to-read guide for the most common Git operations — neatly gr
 |----------|----------|
 | Configure username | `git config --global user.name "Your Name"` |
 | Configure email | `git config --global user.email "you@example.com"` |
+| Configure editor | `git config --global core.editor vim` |
 | View configuration | `git config --list` |
 | Clone an existing repository | `git clone https://github.com/user/repo.git` |
 | Initialize a new repository | `git init` |
@@ -64,6 +65,7 @@ A practical, easy-to-read guide for the most common Git operations — neatly gr
 | Purpose | Command |
 |----------|----------|
 | Discard local file changes | `git checkout -- filename.ext` |
+| Interactive Base/ Rewrite the lat N commits | `git rebase -i HEAD~5` |
 | Undo last commit but keep changes | `git reset --soft HEAD~1` |
 | Undo last commit and changes | `git reset --hard HEAD~1` |
 | Reset to match remote branch (⚠️ overwrites local) | `git fetch origin && git reset --hard origin/qa/2.x` |
